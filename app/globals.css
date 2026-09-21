@@ -6,3 +6,21 @@
 .library-trigger{position:fixed;top:20px;left:22px;z-index:20;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:color-mix(in srgb,var(--ivory) 88%,transparent);backdrop-filter:blur(14px);color:var(--ink);padding:9px 12px;font:500 10px 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(23,24,23,.08)}.library-trigger svg{width:15px;height:15px}.drawer-backdrop{position:fixed;inset:0;z-index:30;background:rgba(10,14,13,.32);border:0;cursor:pointer}.library-drawer{position:fixed;top:0;left:0;bottom:0;width:min(760px,calc(100% - 28px));z-index:31;overflow:auto;padding:110px 5vw 60px;box-shadow:22px 0 60px rgba(10,14,13,.18);animation:drawer-in .28s ease-out}.drawer-close{position:absolute;right:24px;top:22px;width:38px;height:38px;display:grid;place-items:center;background:transparent;border:1px solid var(--line);color:var(--ink);cursor:pointer}.drawer-close svg{width:17px}.library-drawer .library-heading{align-items:stretch;flex-direction:column;gap:28px}.library-drawer .search-results{grid-template-columns:1fr}.theme-dark{background:#202321;color:var(--ink)}.theme-dark .hero,.theme-dark .welcome-section,.theme-dark .category-section,.theme-dark .workflow-section,.theme-dark footer{background:#202321;color:var(--ink)}.theme-dark .library-trigger{background:rgba(32,35,33,.9)}.theme-dark .agent-room,.theme-dark .workflow-node,.theme-dark .category-row{background:#262b28}.theme-dark .room-input{background:#171b19;border-color:#46504b}.theme-dark .room-input input{color:var(--ink)}.room-input button:disabled{opacity:.4;cursor:not-allowed}@keyframes drawer-in{from{transform:translateX(-100%)}to{transform:translateX(0)}}
 @media(max-width:760px){.library-heading{align-items:stretch;flex-direction:column;gap:28px}.search-field{min-width:0;width:100%}.search-results{grid-template-columns:1fr}.agent-search-panel{padding:76px 6vw 88px}.theme-toggle{width:34px;height:34px}.nav-actions{gap:12px}.signin{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade-up,.node{animation:none}.agent-card,.category-row,.dark-button{transition:none}}
+
+/* Keep the selected theme continuous across the document and make the welcome chat feel interactive. */
+body.theme-dark{background:#202321;color:#eeece4}
+body.theme-dark .nav-wrap{background:rgba(32,35,33,.96)}
+.room-input{position:relative;z-index:2;display:flex;align-items:center;gap:12px;min-height:64px;background:var(--ivory);border:1px solid var(--line);padding:8px 10px 8px 18px;box-shadow:0 12px 28px rgba(23,24,23,.08)}
+.room-input:focus-within{border-color:var(--teal);box-shadow:0 0 0 4px rgba(22,118,111,.12),0 12px 28px rgba(23,24,23,.12)}
+.room-input input{min-width:0;flex:1;border:0;outline:0;background:transparent;color:var(--ink);font-size:15px;opacity:1;cursor:text}
+.room-input input::placeholder{color:var(--muted);opacity:1}
+.room-input button{display:grid;place-items:center;flex:none;width:42px;height:42px;border:0;border-radius:50%;background:var(--teal);color:#fff;cursor:pointer;transition:transform .2s,opacity .2s}
+.room-input button:not(:disabled):hover{transform:translateY(-2px)}
+.room-input button:disabled{opacity:.38;cursor:not-allowed}
+.library-trigger{top:92px;left:24px;width:42px;height:42px;padding:0;border-radius:50%;justify-content:center;background:var(--ivory);color:var(--ink)}
+.library-trigger svg{width:20px;height:20px}
+.theme-dark .room-input{background:#171b19;border-color:#53615a;color:#eeece4}
+.theme-dark .room-input input{color:#eeece4}
+.theme-dark .room-input input::placeholder{color:#a5aaa2}
+.theme-dark .library-trigger{background:#29312d;border-color:#53615a;color:#eeece4}
+@media(max-width:760px){.library-trigger{top:84px;left:16px}.room-input{min-height:58px;padding-left:14px}.room-input input{font-size:14px}}
