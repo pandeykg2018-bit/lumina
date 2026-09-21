@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'arc — Intelligence for work',
-  description: '100+ specialized AI agents for real work.',
+  title: 'Social Norm — Intelligence for work',
+  description: 'A world of specialized AI agents built to do real work.',
 }
 
 export const viewport: Viewport = {
