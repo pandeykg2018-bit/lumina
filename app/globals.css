@@ -24,3 +24,30 @@ body.theme-dark .nav-wrap{background:rgba(32,35,33,.96)}
 .theme-dark .room-input input::placeholder{color:#a5aaa2}
 .theme-dark .library-trigger{background:#29312d;border-color:#53615a;color:#eeece4}
 @media(max-width:760px){.library-trigger{top:84px;left:16px}.room-input{min-height:58px;padding-left:14px}.room-input input{font-size:14px}}
+
+/* Final surface and interaction pass */
+.agents-nav-button{border:0;background:transparent;color:inherit;padding:8px 0;font:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.agents-nav-button span{font-size:14px;color:var(--teal)}
+.nav-wrap{background:var(--ivory);color:var(--ink)}
+.hero,.welcome-section,.category-section,.workflow-section,footer{background:var(--ivory);color:var(--ink)}
+.theme-dark .nav-wrap,.theme-dark .hero,.theme-dark .welcome-section,.theme-dark .category-section,.theme-dark .workflow-section,.theme-dark footer{background:#202a27;color:#f1eee7}
+.theme-dark .hero:before{background:linear-gradient(115deg,transparent 42%,rgba(96,184,171,.08))}
+.theme-dark .agent-room,.theme-dark .category-row,.theme-dark .workflow-node{background:#2a3d38;color:#f1eee7;border-color:#4d6a62}
+.theme-dark .chat-message.user{background:#35564e;color:#f1eee7}
+.theme-dark .chat-message.agent{border-color:#6db8ab;color:#f1eee7}
+.theme-dark .room-input{background:#18221f;border-color:#668078}
+.theme-dark .room-input input,.theme-dark .room-input input::placeholder{color:#f1eee7}
+.theme-dark .room-input input::placeholder{color:#a8bbb5}
+.theme-dark .eyebrow,.theme-dark .chat-meta,.theme-dark .category-line{color:#8fd1c3}
+.theme-dark .desktop-nav{color:#d5dfda}
+.theme-dark .desktop-nav a:hover,.theme-dark .signin:hover{color:#a1e0d3}
+.theme-dark .library-drawer{background:#202a27;color:#f1eee7}
+.theme-dark .search-field{background:#18221f;border-color:#668078}
+.theme-dark .search-field input{color:#f1eee7}
+.theme-dark .search-result{background:#2a3d38;color:#f1eee7;border-color:#4d6a62}
+.theme-dark .search-result:hover{background:#35564e}
+.library-trigger{display:none!important}
+@media(max-width:760px){.desktop-nav{display:none}.agents-nav-button{display:none}}
+.chat-message.agent small{display:block;margin-top:10px;color:var(--muted);font:10px 'DM Mono',monospace;letter-spacing:.03em}
+.theme-dark .chat-message.agent small{color:#a8bbb5}
+.room-chat{overflow:hidden}
